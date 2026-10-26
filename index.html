@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dannqvist.com</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Rubik', sans-serif; color: #222; background: #fff; }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('32d7b408-cf9b-444a-b75f-de84dfca21d0.png') center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: normal;
+      font-size: clamp(2rem, 6vw, 4rem);
+      color: #fff;
+      text-shadow: 0 2px 12px rgba(0,0,0,.45);
+    }
+    .scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      width: 24px; height: 24px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    main { padding: 4rem 1rem; text-align: center; }
+    main a { color: #000; font-size: .95rem; text-decoration: none; }
+    main a:hover { text-decoration: underline; }
+
+    footer { padding: 2rem 1rem; text-align: center; font-size: .85rem; color: #777; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>dannqvist.com</h1>
+    <a href="#main" class="scroll" aria-label="Scrolla ner"></a>
+  </header>
+
+  <main id="main">
+    <p><a href="mailto:info@dannqvist.com">info@dannqvist.com</a></p>
+  </main>
+
+  <footer>
+    <p>© Copyright 2016</p>
+  </footer>
+</body>
+</html>
